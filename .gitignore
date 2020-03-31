@@ -114,3 +114,5 @@ $RECYCLE.BIN/
 
 idp-private-key.pem
 idp-public-cert.pem
+
+.vscode

@@ -203,7 +203,7 @@ function processArgs(args, options) {
         description: 'IdP Issuer URI',
         required: true,
         alias: 'iss',
-        default: 'urn:example:idp'
+        default: 'example:idp'
       },
       acsUrl: {
         description: 'SP Assertion Consumer URL',
@@ -301,7 +301,7 @@ function processArgs(args, options) {
         description: 'Authentication Context Class Reference',
         required: false,
         string: true,
-        default: 'urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport',
+        default: 'urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified',
         alias: 'acr'
       },
       authnContextDecl: {

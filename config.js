@@ -5,34 +5,25 @@
 var profile = {
   userName: 'saml.jackson@example.com',
   nameIdFormat: 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
-  firstName: 'Saml',
-  lastName: 'Jackson',
-  displayName: 'saml jackson',
+  first_name: 'Saml',
+  last_name: 'Jackson',
   email: 'saml.jackson@example.com',
-  mobilePhone: '+1-415-555-5141',
-  groups: 'Simple IdP Users, West Coast Users, Cloud Users'
 }
 
 /**
  * SAML Attribute Metadata
  */
 var metadata = [{
-  id: "firstName",
+  id: "first_name",
   optional: false,
   displayName: 'First Name',
   description: 'The given name of the user',
   multiValue: false
 }, {
-  id: "lastName",
+  id: "last_name",
   optional: false,
   displayName: 'Last Name',
   description: 'The surname of the user',
-  multiValue: false
-}, {
-  id: "displayName",
-  optional: true,
-  displayName: 'Display Name',
-  description: 'The display name of the user',
   multiValue: false
 }, {
   id: "email",
@@ -40,24 +31,6 @@ var metadata = [{
   displayName: 'E-Mail Address',
   description: 'The e-mail address of the user',
   multiValue: false
-},{
-  id: "mobilePhone",
-  optional: true,
-  displayName: 'Mobile Phone',
-  description: 'The mobile phone of the user',
-  multiValue: false
-}, {
-  id: "groups",
-  optional: true,
-  displayName: 'Groups',
-  description: 'Group memberships of the user',
-  multiValue: true
-}, {
-  id: "userType",
-  optional: true,
-  displayName: 'User Type',
-  description: 'The type of user',
-  options: ['Admin', 'Editor', 'Commenter']
 }];
 
 module.exports = {
